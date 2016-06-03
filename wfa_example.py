@@ -51,7 +51,7 @@ def wfa_test(verbose=False, draw_test=False, wait_for_user=False,
     """
     ### Parameter setup ###
     k = 4   # number of servers
-    s = 100  # number of requests
+    s = 10  # number of requests
     n = 5   # use an nxn grid
 
     # Generate a grid
