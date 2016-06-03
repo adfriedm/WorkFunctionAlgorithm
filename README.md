@@ -7,15 +7,17 @@ is based on the dynamic programming algorithm given in "The k-server
 problem"-Koutsoupias which is a summary paper which includes the algorithm that
 Koutsoupias and Papadimitriou introduced earlier.
 
-## Included files
+## Included Files
 wfa.py - the class implementation
+
 wfa\_example.py - an example of the algorithm running on a Euclidean grid with
 the usual metric. Running will produce PNGs in a figs/ folder.
+
 make\_mpg.sh - generates a MOV file from the figures. Requires ImageMagick and
 the ffmpeg plugin.
 
 # Background
-## K-server Problem
+## K-Server Problem
 Given k servers on a pseudometric space, determine a sequence of configurations
 in an online manner so that a given sequence of requests is served by a server
 in each corresponding configuration.
@@ -33,6 +35,6 @@ The Work Function Algorithm balances the greedy algorithm (assigning the
 closest server to a request) and the retrospective algorithm (moves servers the
 optimal configuration assuming the current request is the terminating request).
 It is the best proven competitive algorithm known for the k-server problem.
-There are flow algorithms that are polynomial in k and the number of points in
-the space, however this is the original exponential time algorithm with a
-number of amoritisations included.
+There are flow implementations that are polynomial in k and the number of
+points in the space, however this is the original exponential time algorithm
+with a number of amoritisations included.
