@@ -36,7 +36,19 @@ def gen_grid(n=3, nx=None, ny=None, xs=0., xf=1., ys=0., yf=1.):
                  for yi in xrange(ny) ]
     return grid_pts
 
-def wfa_test(verbose=False, draw_test=False, wait_for_user=False, save_figs=False, save_folder=None):
+def wfa_test(verbose=False, draw_test=False, wait_for_user=False,
+            save_figs=False, save_folder=None):
+    """ Euclidean space test of the WFA
+
+    Keyword arguments:
+    verbose       - print returned values
+    draw_test     - generate matplotlib diagrams
+    wait_for_user - require key presses (mouse clicks) to progress through
+                    calculated configurations 
+    save_figs     - save figures
+    save_folder   - directory to save figures (default: current working
+                    directory)
+    """
     ### Parameter setup ###
     k = 4   # number of servers
     s = 100  # number of requests
