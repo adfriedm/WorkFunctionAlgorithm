@@ -38,3 +38,15 @@ It is the best proven competitive algorithm known for the k-server problem.
 There are flow implementations that are polynomial in k and the number of
 points in the space, however this is the original exponential time algorithm
 with a number of amoritisations included.
+
+# Future Updates
+There will be two main updates in the coming months,
+
+1. Fast implementation based on "A fast implementation of the optimal offline
+algorithm for solving the k-server problem"- Rudec et al.
+
+2. Limited memory implementation based on "Work function algorithm can forget
+history without losing competitiveness"- Colussi
+
+Both of these will make using the algorithm more practical or even just
+feasible for large spaces, sequence lengths and numbers of servers.
